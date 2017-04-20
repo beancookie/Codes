@@ -16,7 +16,7 @@ int main(int argc, const char *argv[])
     char *s3 = "ABCDEF";
 //    laro_string_copy(s1, s2);
 //    printf("%s", s1);
-//    printf("%d", laro_string_len(&s1));
+   printf("%d", laro_string_len(&s1));
 //    laro_string_cat(s1, s2);
 //    strcat(s1, s2);
    printf("%s", s1);
