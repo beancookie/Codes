@@ -3,9 +3,7 @@
 #include <vector>
 using namespace std;
 
-string d;
-
-string f(string d)
+string F(string d)
 {
     vector<pair<char, int> > v;
     ostringstream oss;
@@ -24,12 +22,12 @@ string f(string d)
 
 int main()
 {
-    // freopen("1084.in", "r", stdin);
+    freopen("in/1084.in", "r", stdin);
     string d; 
     int n;
     cin >> d >> n;
     for (int i = 0; i < n - 1; ++i)
-        d = f(d);
+        d = F(d);
     cout << d;
     return 0;
 }
