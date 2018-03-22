@@ -16,10 +16,10 @@ string f(string d)
         else 
             v.push_back(make_pair(e, 1));
     }
-    vector<pair<char, int> > v;
+    // vector<pair<char, int> > v;
 
-    v[v.size()-1].first;
-    v.end()->first;
+    // v[v.size()-1].first;
+    // v.end()->first;
     
     for (auto e : v)
         oss << e.first << e.second;
@@ -28,7 +28,7 @@ string f(string d)
 
 int main()
 {
-    // freopen("1084.in", "r", stdin);
+    freopen("1084.in", "r", stdin);
     string d; 
     int n;
     cin >> d >> n;
