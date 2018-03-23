@@ -78,11 +78,16 @@ class Main {
         }
         TreeSet<School> schools = new TreeSet<>();
         
-        Iterator it = map.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry<String, School> entry = (Map.Entry<String, School>)it.next();
-            schools.add(new School(entry.getKey(), entry.getValue().totalGrade, entry.getValue().stuNum));
+        for (Stirng schoolName : map.keySet()) {
+            School school = map.get(schoolName);
+            schools.add(new School(school.schoolName, school.totalGrade, school.stuNum));
         }
+
+        // Iterator it = map.entrySet().iterator();
+        // while (it.hasNext()) {
+        //     Map.Entry<String, School> entry = (Map.Entry<String, School>)it.next();
+        //     schools.add(new School(entry.getKey(), entry.getValue().totalGrade, entry.getValue().stuNum));
+        // }
 
         System.out.println(schools.size());
         int cnt = 1, i = 1;
