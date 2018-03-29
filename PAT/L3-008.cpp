@@ -4,7 +4,6 @@
 using namespace std;
 
 const int MAX_N = 10001;
-const int INFI = 65535;
 
 vector<vector<int> > G;
 bool Visited[MAX_N];
